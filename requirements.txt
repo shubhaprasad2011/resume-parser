@@ -1,3 +1,4 @@
 streamlit
 spacy
 pdfplumber
+scikit-learn
