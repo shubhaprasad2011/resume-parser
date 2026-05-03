@@ -2,8 +2,11 @@ import streamlit as st
 import pdfplumber
 import re
 import spacy
-import os
-# os.system("python -m spacy download en_core_web_sm")
+@st.cache_resource
+def load_model():
+    return spacy.load("en_core_web_sm")
+
+nlp = load_model()
 
 nlp = spacy.load("en_core_web_sm")
 
