@@ -39,8 +39,52 @@ def get_name(text):
 # -------- SKILLS (Improved with N-grams idea) --------
 def get_skills(text):
     skills_db = [
-        "python", "java", "c++", "machine learning",
-        "nlp", "sql", "data science", "tensorflow"
+    # Programming Languages
+    "python", "java", "c", "c++", "c#", "go", "rust", "kotlin", "swift",
+
+    # Microsoft Stack
+    ".net", "asp.net", "asp.net core", "entity framework", "linq",
+    "azure", "azure functions", "azure devops", "power bi", "power apps","ssis", "ssrs",
+
+    # Web Development
+    "javascript", "typescript", "html", "css", "sass", "bootstrap",
+    "react", "angular", "vue.js", "next.js", "node.js", "express.js",
+
+    # Databases
+    "sql", "mysql", "postgresql", "sql server", "oracle",
+    "mongodb", "redis", "cassandra", "dynamodb",
+
+    # Data & AI
+    "data science", "data analysis", "machine learning", "deep learning",
+    "nlp", "computer vision", "tensorflow", "pytorch", "scikit-learn",
+    "pandas", "numpy",
+
+    # Cloud & DevOps
+    "aws", "azure", "google cloud", "cloud computing",
+    "docker", "kubernetes", "jenkins", "terraform", "ansible",
+    "ci/cd", "devops",
+
+    # APIs & Architecture
+    "rest api", "graphql", "microservices", "system design",
+    "design patterns",
+
+    # Testing
+    "unit testing", "integration testing", "selenium", "cypress", "junit",
+
+    # OS & Networking
+    "linux", "unix", "networking", "shell scripting",
+
+    # Security
+    "cybersecurity", "ethical hacking", "oauth", "jwt",
+
+    # Big Data
+    "hadoop", "spark", "kafka", "hive",
+
+    # Tools
+    "git", "github", "gitlab", "bitbucket", "jira",
+
+    # Other
+    "agile", "scrum", "problem solving", "data structures", "algorithms"
     ]
     
     text_lower = text.lower()
